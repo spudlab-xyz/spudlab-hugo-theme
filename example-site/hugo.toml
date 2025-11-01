@@ -1,6 +1,7 @@
 
 baseURL = "/"
 title = "Site Name"
+paginate = 9
 
 [params]
   slogan = "Site Slogan"

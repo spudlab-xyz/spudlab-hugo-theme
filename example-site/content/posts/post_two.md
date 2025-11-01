@@ -3,7 +3,6 @@
 title: "Post Two"
 date: 2025-10-01
 draft: false
-url: "/posts/hello"
 tags: ["intro"]
 categories: ["Lab Note"]
 ---

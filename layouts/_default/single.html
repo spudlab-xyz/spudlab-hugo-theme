@@ -1,10 +1,35 @@
-
 {{ define "main" }}
-  <article>
+<section id="blog" class="section" style="padding-top:0;">
+    <div class="container">
+<article class="post">
+  <header class="post-header">
     <h1>{{ .Title }}</h1>
-    {{ with .Date }}<p><small>{{ .Format "2006-01-02" }}</small></p>{{ end }}
-    <div class="content">
-      {{ .Content }}
-    </div>
-  </article>
+    <p class="meta">
+      {{ with .Date }}<time datetime="{{ . }}">{{ .Format "2006-01-02" }}</time>{{ end }}
+      {{ with .Params.categories }}
+        · <span class="cats">{{ delimit . " / " }}</span>
+      {{ end }}
+      {{ with .Params.author }}
+        · <span class="author">{{ . }}</span>
+      {{ end }}
+    </p>
+  </header>
+
+  <div class="content">
+    {{ .Content }}
+  </div>
+
+  {{ with .Params.tags }}
+  <footer class="post-footer">
+    <p class="tags">
+      {{ range $i, $tag := . }}
+        {{ if $i }}<span class="sep">/</span>{{ end }}
+        <a href="{{ (print "/tags/" $tag | urlize) | relURL }}">{{ $tag }}</a>
+      {{ end }}
+    </p>
+  </footer>
+  {{ end }}
+</article>
+</div>
+</section>
 {{ end }}

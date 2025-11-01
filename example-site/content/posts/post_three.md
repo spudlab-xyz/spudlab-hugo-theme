@@ -3,7 +3,6 @@
 title: "Post Three"
 date: 2025-11-01
 draft: false
-url: "/posts/hello"
 tags: ["intro"]
 categories: ["Field"]
 ---

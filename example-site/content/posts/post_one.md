@@ -3,8 +3,8 @@
 title: "Post One"
 date: 2025-09-01
 draft: false
-url: "/posts/hello"
-tags: ["intro"]
+author: "Joseph McCarthy"
+tags: ["intro","cake"]
 categories: ["How To"]
 ---
 

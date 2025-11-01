@@ -1,14 +1,24 @@
 
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
   {{ if .Content }}<div class="content">{{ .Content }}</div>{{ end }}
-  <ul class="post-list">
+  <section id="blog" class="section" style="padding-top:0;">
+    <div class="container">
+        <h2 class="section-title">Lab notes & updates</h2>
+        <p class="section-sub">Build logs, astronomy notes, environment experiments, and maker diaries.</p>
+
+        <div class="projects-grid">
     {{ range .Paginator.Pages }}
-      <li>
-        <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
-        {{ with .Date }}<small>· {{ .Format "2006-01-02" }}</small>{{ end }}
-      </li>
+      <article class="card">
+                {{ with index .Params.categories 0 }}
+                <small>{{ . }}</small>
+                {{ end }}
+                <a href="{{ .RelPermalink }}"><h3>{{ .LinkTitle }}</h3></a>
+                <p>{{ .Summary }}</p>
+            </article>
     {{ end }}
-  </ul>
-  {{ template "_internal/pagination.html" . }}
+  </div>
+    </div>
+</section>
+  {{ partial "pagination.html" . }}
+
 {{ end }}

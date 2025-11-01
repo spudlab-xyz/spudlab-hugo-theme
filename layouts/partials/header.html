@@ -12,13 +12,13 @@
     <nav class="nav-links">
       {{ $pages := first 3 (where site.RegularPages "Section" "projects") }}
         {{ if gt (len $pages) 0 }}
-          <a href="#projects">Projects</a>
+          <a href="/#projects">Projects</a>
         {{ end }}
-      <a href="#about">What we do</a>
-      <a href="#join">Join</a>
+      <a href="/#about">What we do</a>
+      <a href="/#join">Join</a>
       {{ $pages := first 3 (where site.RegularPages "Section" "posts") }}
         {{ if gt (len $pages) 0 }}
-          <a href="#blog">Notes</a>
+          <a href="/posts">Notes</a>
         {{ end }}
 
     </nav>

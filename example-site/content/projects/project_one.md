@@ -3,7 +3,6 @@
 title: "Project One"
 date: 2025-11-01
 draft: false
-url: "/posts/hello"
 tags: ["keograms","astronomy","open science"]
 categories: ["astronomy","imaging"]
 version: 1.0.2
