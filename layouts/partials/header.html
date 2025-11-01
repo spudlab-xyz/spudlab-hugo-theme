@@ -10,10 +10,17 @@
       </div>
     </a>
     <nav class="nav-links">
-      <a href="#projects">Projects</a>
+      {{ $pages := first 3 (where site.RegularPages "Section" "projects") }}
+        {{ if gt (len $pages) 0 }}
+          <a href="#projects">Projects</a>
+        {{ end }}
       <a href="#about">What we do</a>
       <a href="#join">Join</a>
-      <a href="#blog">Notes</a>
+      {{ $pages := first 3 (where site.RegularPages "Section" "posts") }}
+        {{ if gt (len $pages) 0 }}
+          <a href="#blog">Notes</a>
+        {{ end }}
+
     </nav>
     <a class="nav-cta" href="https://{{ site.Params.git }}" target="_blank" rel="noreferrer">
       GitHub
