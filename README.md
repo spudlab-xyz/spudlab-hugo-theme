@@ -4,8 +4,6 @@ A modern, minimal, and science-inspired [Hugo](https://gohugo.io) theme designed
 
 This theme focuses on clarity, accessibility, and speed — ideal for research blogs, project documentation, and open-science portfolios.
 
----
-
 ## ✨ Features
 
 * Clean, responsive layout built with accessibility in mind
@@ -16,7 +14,6 @@ This theme focuses on clarity, accessibility, and speed — ideal for research b
 * Pre-styled components for badges, datasets, and callouts
 * Integrated social and funding links
 
----
 
 ## 📦 Installation
 
@@ -32,14 +29,10 @@ Then, update your `config.toml` or `config.yaml`:
 theme = "spudlab"
 ```
 
----
-
 ## 🧠 Philosophy
 
 The SpudLab theme is designed to **get out of the way** and let your ideas shine.
 It uses minimal design language, subtle gradients, and clear data presentation to match the tone of collaborative, transparent research.
-
----
 
 ## 🧰 Development
 
@@ -55,14 +48,10 @@ To start local development:
 hugo server -s exampleSite
 ```
 
----
-
 ## 📜 License
 
 This theme is licensed under the **MIT License**.
 You’re free to use, modify, and distribute it with attribution.
-
----
 
 ## 🧑‍🔬 About SpudLab
 
@@ -71,4 +60,6 @@ We build and share tools, libraries, and resources to help developers, researche
 
 ---
 
-**Made with curiosity by the [SpudLab](https://github.com/spudlab-xyz) team.**
+<div align="center">
+  <strong>Built with ❤️ by the SpudLab community</strong>
+</div>
