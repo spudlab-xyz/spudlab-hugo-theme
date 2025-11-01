@@ -1,0 +1,12 @@
+name = "spudlab-empty"
+license = "MIT"
+licenselink = "https://opensource.org/license/mit/"
+description = "An intentionally minimal Hugo theme starter with an example site."
+homepage = "https://github.com/spudlab-xyz/spudlab-empty"
+tags = ["starter", "minimal"]
+features = []
+min_version = "0.134.0"
+
+[author]
+  name = "SpudLab"
+  homepage = "https://spudlab.xyz"

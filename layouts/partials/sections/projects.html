@@ -1,0 +1,28 @@
+{{ $pages := first 3 (where site.RegularPages "Section" "projects") }}
+{{ if gt (len $pages) 0 }}
+<section id="projects" class="section">
+    <div class="container">
+        <h2 class="section-title">Open-science projects</h2>
+        <p class="section-sub">Hardware, software, and data pipelines you can clone, print, and build.</p>
+
+        <div class="projects-grid">
+            {{ range $pages }}
+            <article class="card">
+                {{ with .Params.categories }}
+                <small> {{ delimit . " / " }}</small>
+                {{ end }}
+                <h3>{{ .LinkTitle }}</h3>
+                <p>{{ .Summary }}</p>
+                <div class="tags">
+                    {{ with .Params.tags }}
+                    {{ range . }}
+                    <span class="badge-inline">{{ . }}</span>
+                    {{ end }}
+                    {{ end }}
+            </article>
+            {{end}}
+        </div>
+        
+    </div>
+</section>
+{{ end }}

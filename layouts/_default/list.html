@@ -1,0 +1,14 @@
+
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+  {{ if .Content }}<div class="content">{{ .Content }}</div>{{ end }}
+  <ul class="post-list">
+    {{ range .Paginator.Pages }}
+      <li>
+        <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+        {{ with .Date }}<small>· {{ .Format "2006-01-02" }}</small>{{ end }}
+      </li>
+    {{ end }}
+  </ul>
+  {{ template "_internal/pagination.html" . }}
+{{ end }}
