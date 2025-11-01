@@ -1,5 +1,5 @@
 
-baseURL = "spudlab-xyz.github.io/spudlab-hugo-theme"
+baseURL = "/"
 title = "Site Name"
 
 [params]
