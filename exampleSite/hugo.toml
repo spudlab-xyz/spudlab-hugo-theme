@@ -1,0 +1,19 @@
+
+baseURL = "/"
+title = "SpudLab"
+paginate = 5
+
+[params]
+  slogan = "Open Science for Everyone"
+  repos = 10
+  git = "github.com/spudlab-xyz"
+
+[menus]
+  [[menus.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menus.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 2

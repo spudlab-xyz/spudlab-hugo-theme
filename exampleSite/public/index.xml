@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SpudLab</title>
+    <link>//localhost:1313/</link>
+    <description>Recent content on SpudLab</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 01 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Post Three</title>
+      <link>//localhost:1313/posts/hello/</link>
+      <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/hello/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum facilisis, augue et volutpat gravida, lacus eros sollicitudin urna, non ullamcorper augue diam sit amet purus. Nulla sagittis, arcu ut ornare vehicula, mi eros venenatis lorem, scelerisque porttitor velit diam at leo.</description>
+    </item>
+    <item>
+      <title>Project One</title>
+      <link>//localhost:1313/posts/hello/</link>
+      <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/hello/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum facilisis, augue et volutpat gravida, lacus eros sollicitudin urna, non ullamcorper augue diam sit amet purus. Nulla sagittis, arcu ut ornare vehicula, mi eros venenatis lorem, scelerisque porttitor velit diam at leo.</description>
+    </item>
+    <item>
+      <title>Post Two</title>
+      <link>//localhost:1313/posts/hello/</link>
+      <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/hello/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum facilisis, augue et volutpat gravida, lacus eros sollicitudin urna, non ullamcorper augue diam sit amet purus. Nulla sagittis, arcu ut ornare vehicula, mi eros venenatis lorem, scelerisque porttitor velit diam at leo.</description>
+    </item>
+    <item>
+      <title>Post One</title>
+      <link>//localhost:1313/posts/hello/</link>
+      <pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/hello/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum facilisis, augue et volutpat gravida, lacus eros sollicitudin urna, non ullamcorper augue diam sit amet purus. Nulla sagittis, arcu ut ornare vehicula, mi eros venenatis lorem, scelerisque porttitor velit diam at leo.</description>
+    </item>
+  </channel>
+</rss>
