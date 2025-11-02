@@ -5,9 +5,9 @@
           © <span id="year">{{ now.Format "2006" }} {{ site.Title }}</span>.  {{ site.Params.slogan }}
         </div>
         <div class="footer-links">
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#join">Join</a>
+          <a href={{ "#about" | relURL }}>About</a>
+          <a href={{ "#projects" | relURL }}>Projects</a>
+          <a href={{ "#join" | relURL }}>Join</a>
           <span class="github-pill">
             <span aria-hidden="true">★</span>
             <a href="https://{{ site.Params.git }}" target="_blank" rel="noreferrer">{{ site.Params.git }}</a>
