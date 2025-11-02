@@ -1,7 +1,7 @@
 
-baseURL = "/"
+baseURL = "https://spudlab-xyz.github.io/spudlab-hugo-theme/"
 title = "Site Name"
-paginate = 9
+paginate = 2
 
 [params]
   slogan = "Site Slogan"

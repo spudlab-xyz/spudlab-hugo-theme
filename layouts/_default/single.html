@@ -24,7 +24,7 @@
     <p class="tags">
       {{ range $i, $tag := . }}
         {{ if $i }}<span class="sep">/</span>{{ end }}
-        <a href="{{ (print "/tags/" $tag | urlize) | relURL }}">{{ $tag }}</a>
+        <a href="{{ (print "tags/" ($tag | urlize) | relURL) }}">{{ $tag }}</a>
       {{ end }}
     </p>
   </footer>

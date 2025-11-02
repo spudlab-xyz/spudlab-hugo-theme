@@ -1,6 +1,6 @@
 <div class="container">
   <div class="nav">
-    <a href="/">
+    <a href={{ .Site.BaseURL | relURL }} class="nav-logo">
       <div class="logo-area">
         <img src="/images/logo.png" alt="logo">
         <div>
@@ -12,13 +12,13 @@
     <nav class="nav-links">
       {{ $pages := first 3 (where site.RegularPages "Section" "projects") }}
         {{ if gt (len $pages) 0 }}
-          <a href="/#projects">Projects</a>
+          <a href={{ "#projects" | relURL }}>Projects</a>
         {{ end }}
-      <a href="/#about">What we do</a>
-      <a href="/#join">Join</a>
+      <a href={{ "#about" | relURL }}>What we do</a>
+      <a href={{ "#join" | relURL }}>Join</a>
       {{ $pages := first 3 (where site.RegularPages "Section" "posts") }}
         {{ if gt (len $pages) 0 }}
-          <a href="/posts">Notes</a>
+          <a href={{ "posts/" | relURL }}>Notes</a>
         {{ end }}
 
     </nav>
