@@ -2,7 +2,7 @@
   <div class="nav">
     <a href={{ .Site.BaseURL | relURL }} class="nav-logo">
       <div class="logo-area">
-        <img src="/images/logo.png" alt="logo">
+        <img src="{{ "images/logo.png" | absURL }}" alt="logo">
         <div>
           <div class="logo-title">{{ .Site.Title }}</div>
           <div class="tagline">{{ .Site.Params.slogan }}</div>
